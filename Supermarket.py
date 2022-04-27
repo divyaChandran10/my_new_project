@@ -2,13 +2,14 @@ import sys
 
 
 def get_section(var1, var2, var3):
-
+    amount = 0
     #print(f'The values are {var1}, {var2}, {var3}')
     if var1 >= 1 and var2 >= 1 and var3 >= 1:
         print("####   All sections are visited   #####")
-        print(f'Total value of the products are {total}')
-        #for i in len(total):
-            
+        print(f'Value of each products are {total}')
+        for i in total:
+            amount = amount + i
+        print(f'The final amount to be paid: {amount}')
         sys.exit()
     else:
         print("*** Sections ***")
@@ -55,8 +56,8 @@ def grocery(x, y, z):
         get_section(var1, y, z)
     else:
         print(f'Invalid option: Choose the correct option')
-        grocery(var1)
-    return (var1, y, z)
+        grocery(var1, y, z)
+    return var1, y, z
 
 
 def milk_products(x, y, z):
@@ -77,7 +78,7 @@ def milk_products(x, y, z):
     else:
         print(f'Invalid option: Choose the correct option')
         milk_products(x, var2, z)
-    return (x, var2, z)
+    return x, var2, z
 
 
 def stationary(x, y, z):
@@ -98,7 +99,7 @@ def stationary(x, y, z):
     else:
         print(f'Invalid option: Choose the correct option')
         stationary(x, y, var3)
-    return (x, y, var3)
+    return x, y, var3
 
 
 if __name__ == '__main__':
@@ -111,4 +112,3 @@ if __name__ == '__main__':
     global total
     total = []
     get_section(var1, var2, var3)
-
