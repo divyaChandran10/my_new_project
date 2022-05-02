@@ -4,14 +4,17 @@ date = datetime.datetime.now()
 
 
 def is_weekend(date):
-    print(str(datetime.datetime.weekday(date)))
     if (datetime.datetime.weekday(date)) == 5 or (datetime.datetime.weekday(date)) == 6:
-        print('True')
+        return 'True'
     else:
-        print('False')
+        return 'False'
 
 
 if __name__ == '__main__':
-    date = datetime.datetime.now()
-    print(date)
-    is_weekend(date)
+    #date = datetime.datetime.now()
+    #print(date)
+    #is_weekend(date)
+    print(is_weekend(datetime.date(2021, 8, 6)))
+    print(is_weekend(datetime.date(2021, 8, 7)))
+    print(is_weekend(datetime.date(2021, 8, 8)))
+    print(is_weekend(datetime.date(2021, 8, 9)))
