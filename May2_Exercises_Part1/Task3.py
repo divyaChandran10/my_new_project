@@ -12,7 +12,7 @@ today = datetime.date(2021, 8, 7)
 
 
 def is_weekend(date):
-    if (datetime.datetime.weekday(date)) == 5 or (datetime.datetime.weekday(date)) == 6:
+    if (date.weekday()) == 5 or (date.weekday()) == 6:
         return True
     else:
         return False
