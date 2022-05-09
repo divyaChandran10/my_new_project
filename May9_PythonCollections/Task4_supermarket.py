@@ -17,19 +17,19 @@ products = [
     {
         "name": "Soda Max",
         "category": "beverages",
-        "price": 8
+        "price": 0.8
     },
     {
         "name": "Beer",
         "category": "beverages",
-        "price": 10
+        "price": 1
     }
 ]
 
 if __name__ == '__main__':
     prod_category = input('Enter the product category')
     discount = float(input('enter discount to apply'))
-    for item in range(len(products)):
-        if products[item]["category"] == prod_category:
-            new_price = float(products[item]["price"]) - (float(products[item]["price"]) * discount / 100)
-            print(f'{products[item]["name"]} : {new_price}')
+    for item in products:
+        if item["category"] == prod_category:
+            new_price = float(item["price"]) - (float(item["price"]) * discount / 100)
+            print(f'{item["name"]} : {new_price}')

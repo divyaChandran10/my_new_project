@@ -31,10 +31,11 @@ posts = [
     },
 ]
 
+
 if __name__ == '__main__':
     author_name = input('Enter the author name')
     print(f'{author_name} \'s Posts \n ')
-    for user in range(len(posts)):
-        if posts[user]['author'] == author_name:
-            print(f'-{posts[user]["title"]}')
+    for post in posts:
+        if post['author'] == author_name:
+            print(f'-{post["title"]}')
 
