@@ -60,13 +60,12 @@ def get_total_expenses():
     total_expenses = 0
     for employee in employees:
         total_expenses = total_expenses + employee["employee_salary"]
-    print(f'The total expenses of the store is {(total_expenses / len(employees)):.2f}')
+    print(f'The total expenses of the store is {total_expenses}')
 
 
 if __name__ == '__main__':
     emp_name = input('Enter employee name')
     get_employee_by_name(emp_name)
-
     emp_age = int(input('Enter employee age'))
     get_employees_by_age(emp_age)
     get_salary_by_name(emp_name)
