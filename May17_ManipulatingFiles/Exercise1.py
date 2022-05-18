@@ -54,19 +54,10 @@ def get_login():
 
 
 def generate_contact_list():
-    num_of_users = int(input('Enter number of users to be added \n'))
-    user_list = []
-    for index in range(num_of_users):
-        name = input('Enter the username')
-        value = input('Enter th email')
-        user_list.append((name, value))
-    for index in range(num_of_users):
-        print(user_list[index], '\n')
-
-    with open('user.txt', 'w') as file:
-        file.write(str(user_list))
-        file.close()
-        print('Created a list of users with names and e-mail \n')
+    with open('user.json', 'r') as file:
+        data = json.load(file)
+    for user in data:
+        print(f'{user["username"]} - {user["email"]}')
 
 
 if __name__ == '__main__':

@@ -1,66 +1,66 @@
 [
   {
     "username": "user1",
-    "password": "some123",
+    "password": "somepass",
     "name": "User One",
     "email": "user@one.com",
     "is_active": true,
-    "is_subscriber": true
+    "is_subscriber":  true
   },
   {
     "username": "user2",
-    "password": "123abc",
-    "name": "User One",
+    "password": "somepa323ss",
+    "name": "User Two",
     "email": "user@one.com",
     "is_active": false,
-    "is_subscriber": true
+    "is_subscriber":  true
   },
   {
     "username": "user3",
-    "password": "somepass",
-    "name": "User One",
+    "password": "som2323epass",
+    "name": "User Three",
     "email": "user@one.com",
     "is_active": false,
-    "is_subscriber": false
+    "is_subscriber":  false
   },
   {
     "username": "user4",
-    "password": "somepass",
-    "name": "User One",
+    "password": "somepass12",
+    "name": "User Four",
     "email": "user@one.com",
     "is_active": false,
-    "is_subscriber": true
-  },
-  {
-    "username": "user5",
-    "password": "somepass",
-    "name": "User One",
-    "email": "user@one.com",
-    "is_active": false,
-    "is_subscriber": false
+    "is_subscriber":  true
   },
   {
     "username": "user6",
-    "password": "somepass",
-    "name": "User One",
+    "password": "12321321",
+    "name": "User Five",
     "email": "user@one.com",
-    "is_active": true,
-    "is_subscriber": false
+    "is_active": false,
+    "is_subscriber":  false
   },
   {
     "username": "user7",
-    "password": "somepass",
-    "name": "User One",
+    "password": "213213",
+    "name": "User Six",
     "email": "user@one.com",
     "is_active": true,
-    "is_subscriber": false
+    "is_subscriber":  false
   },
   {
     "username": "user8",
-    "password": "somepass",
-    "name": "User One",
+    "password": "somep213ass",
+    "name": "User Seven",
     "email": "user@one.com",
     "is_active": true,
-    "is_subscriber": true
+    "is_subscriber":  false
+  },
+  {
+    "username": "user9",
+    "password": "somepass",
+    "name": "User Eight",
+    "email": "user@one.com",
+    "is_active": true,
+    "is_subscriber":  true
   }
 ]
