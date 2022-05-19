@@ -1,0 +1,28 @@
+from tv import Television
+
+if __name__ == '__main__':
+    TV = Television()
+    #TV.turn_on(False)
+    TV.turn_off(False)
+    TV.set_channel(3)
+    TV.channel_up()
+    #TV.set_volume(7)
+    TV.volume_up()
+    TV.volume_up()
+    TV.volume_up()
+    TV.volume_up()
+    TV.volume_up()
+    TV.volume_up()
+    print('Sets off for a break\n')
+
+    TV2 = Television()
+    TV2.turn_off(False)
+    print('Setting on after the break \n')
+    TV2.turn_on(True)
+    TV2.set_channel(100)
+    TV2.channel_down()
+    TV2.set_volume(5)
+    TV2.volume_down()
+    TV2.volume_down()
+    print(TV2.volume_level)
+    print(TV.volume_level)
