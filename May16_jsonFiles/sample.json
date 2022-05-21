@@ -1,0 +1,14 @@
+{
+    "details1": {
+        "name": "YxZ",
+        "subject": "Engineering",
+        "City": "Pune"
+    },
+    "details2": {
+        "name": "AcB",
+        "subject": "Science",
+        "City": "Chennai"
+    }
+}
+{"name": "John", "age": 30}
+["apple", "bananas"]
