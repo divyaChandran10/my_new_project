@@ -5,11 +5,13 @@ from check import print_rectangle_properties
 
 class Rectangle:
     def __init__(self, width, height):
-        self.width = float(width)
-        self.height = float(height)
+
+        # explicit float conversion is not required , like float(width)..
+        self.width = width
+        self.height = height
 
     def get_area(self):
-        return float(self.width * self.height)
+        return self.width * self.height
 
     def get_perimeter(self):
         return float(2 * self.width + 2 * self.height)
@@ -27,7 +29,7 @@ class Rectangle:
 def main():
     rec1 = Rectangle(9.0, 12.0)
     print_rectangle_properties(rec1)
-    rec2 = Rectangle(17.0, 13.0)
+    rec2 = Rectangle(17, 13)
     print_rectangle_properties(rec2)
 
 
